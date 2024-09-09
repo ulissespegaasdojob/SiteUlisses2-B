@@ -1,0 +1,121 @@
+/* Estilo global */
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #ff4500;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Seção chamada */
+.chamada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.chamada h1 {
+    font-size: 3rem;
+    color: #ff4500;
+    margin: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.chamada p {
+    font-size: 1.2rem;
+    color: #ffb400;
+    margin-bottom: 20px;
+}
+
+/* Estilo do iframe (vídeo) */
+iframe {
+    border: 5px solid #ff4500;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+iframe:hover {
+    transform: scale(1.05);
+}
+
+/* Seção categoria */
+.categoria {
+    width: 100%;
+    text-align: center;
+}
+
+.categoria h2 {
+    font-size: 2.5rem;
+    color: #ffb400;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.categoria-videos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.categoria-videos a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.categoria-videos img {
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.categoria-videos a:hover img {
+    transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .chamada h1 {
+        font-size: 2rem;
+    }
+
+    .categoria-videos img {
+        width: 200px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 2rem;
+    }
+
+    .chamada h1 {
+        font-size: 1.5rem;
+    }
+
+    .categoria-videos img {
+        width: 150px;
+        height: 100px;
+    }
+}
